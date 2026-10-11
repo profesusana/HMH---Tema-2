@@ -1,0 +1,1942 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reto sanitario | Tema 2: Instrumental sanitario</title>
+<style>
+:root{--ink:#17324d;--muted:#61758a;--teal:#087f8c;--teal-dark:#06636d;--mint:#e6f6f3;--paper:#f4f8fb;--line:#dce7ee;--white:#fff;--good:#16794b;--good-bg:#e8f7ee;--bad:#b42332;--bad-bg:#fff0f0;--shadow:0 18px 45px rgba(28,63,87,.09)}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at top left,#e5f6f4 0,transparent 34%),var(--paper);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.5}button{font:inherit;cursor:pointer}button:focus-visible{outline:3px solid #f2b84b;outline-offset:3px}.shell{width:min(900px,100% - 32px);margin:0 auto;padding:28px 0 48px}header{display:flex;align-items:center;gap:12px;margin-bottom:24px}.logo{width:48px;height:48px;border-radius:16px;background:var(--teal);color:white;display:grid;place-items:center;font-size:25px;box-shadow:0 8px 18px #087f8c35}.brand{font-weight:800;letter-spacing:-.02em;font-size:1.05rem}.brand small{display:block;color:var(--muted);font-weight:500;font-size:.83rem;letter-spacing:0}.panel{background:var(--white);border:1px solid var(--line);border-radius:24px;padding:clamp(22px,5vw,42px);box-shadow:var(--shadow)}.eyebrow{display:inline-flex;align-items:center;gap:7px;background:var(--mint);color:var(--teal-dark);font-size:.8rem;font-weight:800;padding:7px 11px;border-radius:999px}h1{font-size:clamp(2rem,5vw,3.1rem);line-height:1.08;letter-spacing:-.045em;margin:18px 0 14px}h2{font-size:clamp(1.4rem,3vw,2rem);line-height:1.2;letter-spacing:-.03em;margin:14px 0}p{color:var(--muted)}.hero-grid{display:grid;grid-template-columns:1.4fr .8fr;gap:28px;align-items:center}.hero-art{background:linear-gradient(145deg,#e3f6f2,#edf4ff);border-radius:22px;min-height:210px;display:grid;place-items:center;font-size:5rem;position:relative;overflow:hidden}.hero-art:after{content:"";position:absolute;width:170px;height:170px;border:1px solid #087f8c2a;border-radius:50%;right:-28px;bottom:-50px}.stats{display:flex;gap:10px;flex-wrap:wrap;margin:22px 0}.stat{background:#f7fafc;border:1px solid var(--line);border-radius:14px;padding:10px 13px;font-size:.88rem;color:var(--muted)}.stat strong{color:var(--ink)}.primary,.secondary{border:0;border-radius:14px;padding:13px 19px;font-weight:800;transition:transform .15s,background .15s}.primary{background:var(--teal);color:white;box-shadow:0 7px 15px #087f8c2b}.primary:hover{background:var(--teal-dark);transform:translateY(-1px)}.secondary{background:#eef4f7;color:var(--ink)}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}#mode-select{margin-bottom:15px}.topline{display:flex;justify-content:space-between;gap:12px;align-items:center;color:var(--muted);font-size:.9rem;margin-bottom:12px}.progress{height:8px;background:#e8eff3;border-radius:999px;overflow:hidden;margin-bottom:28px}.progress span{display:block;height:100%;width:0;background:linear-gradient(90deg,#087f8c,#45b9aa);border-radius:999px;transition:width .25s}.question{font-size:clamp(1.25rem,3vw,1.65rem);font-weight:800;line-height:1.35;margin:0 0 22px}.options{display:grid;gap:11px}.option{width:100%;text-align:left;border:1.5px solid var(--line);background:white;border-radius:15px;padding:15px;display:flex;gap:12px;align-items:flex-start;color:var(--ink);transition:border .15s,background .15s}.option:hover:not(:disabled){border-color:var(--teal);background:#f6fcfb}.option .letter{flex:0 0 30px;height:30px;border-radius:9px;background:#eef4f7;display:grid;place-items:center;font-weight:800;color:#456176}.option.correct{border-color:#69bd91;background:var(--good-bg)}.option.incorrect{border-color:#e5a0a6;background:var(--bad-bg)}.option:disabled{cursor:default}.feedback{border-radius:15px;padding:15px 17px;margin-top:18px}.feedback.good{background:var(--good-bg);color:#145d3d}.feedback.bad{background:var(--bad-bg);color:#8d1e2b}.feedback strong{display:block;margin-bottom:4px}.hidden{display:none!important}.result-score{font-size:3.5rem;font-weight:900;letter-spacing:-.06em;color:var(--teal);line-height:1.1;margin:16px 0 8px}.review-list{display:grid;gap:13px;margin-top:20px}.review-item{border:1px solid var(--line);border-radius:15px;padding:16px}.review-item h3{font-size:1rem;margin:0 0 8px}.review-item p{margin:5px 0;font-size:.94rem}footer{text-align:center;color:var(--muted);font-size:.82rem;margin-top:20px}@media(max-width:650px){.shell{width:min(100% - 20px,900px);padding-top:16px}.hero-grid{grid-template-columns:1fr}.hero-art{min-height:130px;font-size:3.6rem}.panel{border-radius:19px}.topline{align-items:flex-start}}
+</style>
+</head>
+<body><div class="shell">
+<header><div class="logo" aria-hidden="true">✚</div><div class="brand">RETO SANITARIO<small>Tema 2 · Instrumental sanitario y carro de curas</small></div></header>
+<main>
+<section id="home" class="panel"><div class="hero-grid"><div><span class="eyebrow">✦ APRENDE · PRACTICA · MEJORA</span><h1>Entrena tu conocimiento del instrumental sanitario</h1><p>Repasa con preguntas tipo test y explicaciones.</p><div class="stats"><div class="stat">📝 <strong id="home-count">0 preguntas</strong></div><div class="stat">🎯 <strong>Tipo test</strong></div><div class="stat">📱 <strong>Adaptado a móvil</strong></div></div><label for="mode-select" style="display:block;font-weight:750;margin:0 0 7px">¿Qué quieres practicar?</label><select id="mode-select" style="display:block;width:100%;max-width:390px;padding:12px;border:1px solid var(--line);border-radius:12px;background:#fff;color:var(--ink);font:inherit"><option value="all">Tema completo (todas las preguntas)</option></select><p id="mode-help" style="font-size:.87rem;margin:8px 0 0">Incluye todo el tema y sus matices.</p><button class="primary" id="start-btn">Comenzar práctica →</button></div><div class="hero-art" aria-hidden="true">🩺</div></div><p style="font-size:.84rem;margin:22px 0 0">Elaborado por Susana Felipe Ortiz con ayuda de IA, a partir del tema de clase.</p></section>
+<section id="quiz" class="panel hidden" aria-live="polite"><div class="topline"><span id="question-counter">Pregunta 1</span><span id="score-live">Aciertos: 0</span></div><div class="progress" aria-label="Progreso del cuestionario"><span id="progress-bar"></span></div><p class="eyebrow" id="question-category">PREGUNTA DE REPASO</p><h2 class="question" id="question-text"></h2><div id="options" class="options"></div><div id="feedback" class="feedback hidden" role="status"></div><div class="actions"><button id="next-btn" class="primary hidden">Siguiente pregunta →</button><button id="quit-btn" class="secondary">Volver al inicio</button></div></section>
+<section id="results" class="panel hidden"><span class="eyebrow">✦ TEST COMPLETADO</span><h2 id="result-heading">¡Buen trabajo!</h2><div class="result-score" id="result-score">0/0</div><p id="result-message"></p><div class="stats"><div class="stat">✅ Aciertos: <strong id="correct-total">0</strong></div><div class="stat">↻ Para repasar: <strong id="wrong-total">0</strong></div><div class="stat">📊 Resultado: <strong id="percentage">0%</strong></div></div><div class="actions"><button id="review-btn" class="secondary">Revisar todas las respuestas</button><button id="retry-btn" class="primary">Repetir práctica ↻</button></div><div id="review" class="review-list hidden"></div></section>
+</main><footer>Recurso de práctica · Higiene del medio hospitalario · Banco completo o por bloques</footer></div>
+<script>
+const questions = [
+  {
+    "question": "¿Cuál es una de las responsabilidades del TCAE respecto al instrumental sanitario?",
+    "options": [
+      "Conocer su utilidad y colaborar en su preparación y cuidado",
+      "Diseñar todos los instrumentos quirúrgicos",
+      "Elegir por sí solo la técnica quirúrgica",
+      "Reutilizar siempre el material desechable"
+    ],
+    "correct": 0,
+    "explanation": "El tema destaca que el TCAE debe identificar el instrumental, prepararlo, recogerlo, limpiarlo, cuidarlo y almacenarlo correctamente."
+  },
+  {
+    "question": "¿Qué procesos se mencionan para mantener el instrumental reutilizable en condiciones adecuadas?",
+    "options": [
+      "Solo aclarado con agua",
+      "Limpieza, desinfección y esterilización",
+      "Únicamente secado",
+      "Perfumar y guardar"
+    ],
+    "correct": 1,
+    "explanation": "El instrumental reutilizable debe someterse al proceso correspondiente de limpieza, desinfección y esterilización."
+  },
+  {
+    "question": "¿Cuál de estas funciones puede cumplir el instrumental sanitario?",
+    "options": [
+      "Cortar tejidos",
+      "Producir hemostasia",
+      "Sujetar o exponer tejidos",
+      "Todas las anteriores"
+    ],
+    "correct": 3,
+    "explanation": "El instrumental se clasifica según funciones como corte, hemostasia, sujeción, exposición y aspiración."
+  },
+  {
+    "question": "¿Qué material se utiliza con frecuencia para fabricar instrumental sanitario?",
+    "options": [
+      "Cartón",
+      "Acero inoxidable",
+      "Tela de algodón",
+      "Vidrio corriente"
+    ],
+    "correct": 1,
+    "explanation": "El tema indica que gran parte del instrumental está fabricado en acero inoxidable, aunque existen otros materiales."
+  },
+  {
+    "question": "¿Qué parte del instrumento entra en contacto con los tejidos?",
+    "options": [
+      "La parte activa",
+      "La articulación",
+      "El mango",
+      "La cremallera siempre"
+    ],
+    "correct": 0,
+    "explanation": "La parte activa es la zona que entra en contacto con los tejidos."
+  },
+  {
+    "question": "¿Qué función tiene la articulación en un instrumento articulado?",
+    "options": [
+      "Identificar al fabricante",
+      "Permitir la apertura y el cierre",
+      "Absorber líquidos",
+      "Evitar la esterilización"
+    ],
+    "correct": 1,
+    "explanation": "La articulación es la zona de unión de las hojas y permite abrir y cerrar el instrumento."
+  },
+  {
+    "question": "¿Para qué sirven los mangos de un instrumento?",
+    "options": [
+      "Para sujetarlo y manejarlo",
+      "Para cortar siempre",
+      "Para esterilizarlo por sí solos",
+      "Para medir la presión arterial"
+    ],
+    "correct": 0,
+    "explanation": "Los mangos son las zonas por las que se sujeta el instrumento."
+  },
+  {
+    "question": "¿Cuál es la finalidad principal del instrumental de corte o diéresis?",
+    "options": [
+      "Seccionar tejidos o materiales",
+      "Medir la temperatura",
+      "Administrar medicación",
+      "Registrar el pulso"
+    ],
+    "correct": 0,
+    "explanation": "El instrumental de corte se utiliza para seccionar tejidos orgánicos o materiales como apósitos, vendajes o suturas."
+  },
+  {
+    "question": "¿Qué dos partes forman el bisturí manual descrito en el tema?",
+    "options": [
+      "Mango y hoja",
+      "Dos mangos",
+      "Hoja y cremallera",
+      "Puntas y manómetro"
+    ],
+    "correct": 0,
+    "explanation": "El bisturí manual consta de un mango y una hoja, que puede variar según el uso."
+  },
+  {
+    "question": "¿Qué característica tiene el bisturí desechable?",
+    "options": [
+      "Es de un solo uso y suele tener mango plástico",
+      "Se afila para reutilizarlo indefinidamente",
+      "Está formado por una sola pieza reutilizable",
+      "Solo funciona con ultrasonidos"
+    ],
+    "correct": 0,
+    "explanation": "El bisturí desechable es de un solo uso, con mango de plástico y hoja de acero inoxidable, y se comercializa esterilizado."
+  },
+  {
+    "question": "¿Qué es el escalpelo según el tema?",
+    "options": [
+      "Un bisturí con mango y hoja en una sola pieza",
+      "Una pinza de hemostasia",
+      "Un separador dinámico",
+      "Un aparato de diagnóstico por imagen"
+    ],
+    "correct": 0,
+    "explanation": "El escalpelo es una pieza completa con mango y hoja en una sola pieza; está en desuso."
+  },
+  {
+    "question": "¿Cómo actúa el bisturí eléctrico?",
+    "options": [
+      "Usa corriente eléctrica de alta frecuencia para cortar y coagular",
+      "Utiliza únicamente agua a presión",
+      "Mide la actividad cardíaca",
+      "Retira grapas"
+    ],
+    "correct": 0,
+    "explanation": "El calor generado por una corriente de alta frecuencia permite cortar tejidos y coagular la sangre."
+  },
+  {
+    "question": "¿Qué tecnología utiliza el bisturí láser?",
+    "options": [
+      "Luz láser para cortar tejidos blandos",
+      "Una carga eléctrica para restaurar el ritmo cardíaco",
+      "Ultrasonidos para obtener imágenes",
+      "Una hoja de sierra manual"
+    ],
+    "correct": 0,
+    "explanation": "El bisturí láser corta tejidos blandos mediante luz láser."
+  },
+  {
+    "question": "¿Qué hace el bisturí ultrasónico según el tema?",
+    "options": [
+      "Realiza corte y coagulación mediante ultrasonidos",
+      "Mide la presión arterial",
+      "Retira puntos de sutura",
+      "Sujeta los campos quirúrgicos"
+    ],
+    "correct": 0,
+    "explanation": "El tema señala que el bisturí ultrasónico corta y coagula mediante ultrasonidos y se usa en cirugía laparoscópica."
+  },
+  {
+    "question": "En términos generales, ¿para qué se suelen usar las tijeras rectas?",
+    "options": [
+      "Para cortar hilos",
+      "Para cortar huesos",
+      "Para medir heridas",
+      "Para sujetar pulmones"
+    ],
+    "correct": 0,
+    "explanation": "El tema indica, de forma general, que las tijeras rectas se emplean para cortar hilos."
+  },
+  {
+    "question": "¿Para qué se emplean generalmente las tijeras curvas?",
+    "options": [
+      "Para cortar tejidos",
+      "Para retirar grapas exclusivamente",
+      "Para explorar el oído",
+      "Para medir la altura"
+    ],
+    "correct": 0,
+    "explanation": "Las tijeras curvas se emplean generalmente para cortar tejidos."
+  },
+  {
+    "question": "¿Qué uso se atribuye a las tijeras anguladas?",
+    "options": [
+      "Diéresis de vasos sanguíneos",
+      "Medición de la presión arterial",
+      "Sujeción de campos",
+      "Administración de sueros"
+    ],
+    "correct": 0,
+    "explanation": "El tema asocia las tijeras anguladas con la diéresis o corte de vasos sanguíneos."
+  },
+  {
+    "question": "¿Qué característica tienen las tijeras de Mayo de punta roma descritas?",
+    "options": [
+      "Hojas anchas y robustas para cortar tejidos de mayor grosor",
+      "Puntas muy finas para microcirugía",
+      "Extremo abotonado para proteger la piel",
+      "Puntas triangulares para sujetar pulmón"
+    ],
+    "correct": 0,
+    "explanation": "Las tijeras de Mayo rectas de punta roma tienen hojas grandes y anchas y se usan para cortar grosores o cantidades importantes de tejido."
+  },
+  {
+    "question": "¿Para qué se utilizan las tijeras de Iris?",
+    "options": [
+      "Disecciones muy finas y tejidos delicados",
+      "Cortar escayolas",
+      "Cortar costillas",
+      "Retirar grapas metálicas"
+    ],
+    "correct": 0,
+    "explanation": "Las tijeras de Iris se utilizan en disecciones muy finas, por ejemplo en cirugía de boca, plástica u oftalmológica."
+  },
+  {
+    "question": "¿Qué uso tienen las tijeras de Metzenbaum?",
+    "options": [
+      "Disecciones finas o aislamiento de vasos y conductos",
+      "Cortar vendajes rígidos",
+      "Retirar grapas",
+      "Medir la saturación de oxígeno"
+    ],
+    "correct": 0,
+    "explanation": "Las Metzenbaum se emplean para disecciones finas o para aislar vasos o conductos."
+  },
+  {
+    "question": "¿Qué característica presentan las tijeras Lister para vendajes?",
+    "options": [
+      "Suelen estar acodadas y tienen un extremo abotonado",
+      "Tienen puntas triangulares fenestradas",
+      "Funcionan con corriente eléctrica",
+      "Tienen un manómetro"
+    ],
+    "correct": 0,
+    "explanation": "El extremo abotonado ayuda a evitar lesiones en la piel al cortar vendajes o ropa."
+  },
+  {
+    "question": "¿Para qué se utiliza el costótomo?",
+    "options": [
+      "Para seccionar costillas en cirugía torácica",
+      "Para cortar puntos de sutura",
+      "Para medir el peso",
+      "Para sujetar campos quirúrgicos"
+    ],
+    "correct": 0,
+    "explanation": "El costótomo es una tenaza potente utilizada para seccionar costillas en cirugía torácica."
+  },
+  {
+    "question": "¿Qué función tiene la sierra oscilante?",
+    "options": [
+      "Cortar materiales o tejidos duros sin lesionar los tejidos blandos",
+      "Cerrar vasos sanguíneos",
+      "Aplicar grapas",
+      "Explorar el oído"
+    ],
+    "correct": 0,
+    "explanation": "El tema la describe para cortar yesos y, en traumatología, huesos, evitando lesionar tejidos blandos."
+  },
+  {
+    "question": "¿Para qué se utiliza una legra o cureta según el tema?",
+    "options": [
+      "Para retirar tejido del fondo de una cavidad, generalmente en ginecología",
+      "Para registrar la actividad eléctrica del corazón",
+      "Para sujetar el campo operatorio",
+      "Para administrar medicación endovenosa"
+    ],
+    "correct": 0,
+    "explanation": "La legra o cureta se utiliza generalmente en Ginecología para retirar tejido del fondo de una cavidad."
+  },
+  {
+    "question": "¿Cuál es la función de las pinzas de disección?",
+    "options": [
+      "Sujetar tejidos durante exposición, corte o sutura",
+      "Cerrar vasos sanguíneos exclusivamente",
+      "Separar automáticamente los bordes de una herida",
+      "Retirar líquidos mediante vacío"
+    ],
+    "correct": 0,
+    "explanation": "Las pinzas de disección sujetan tejidos durante maniobras de exposición, corte o sutura."
+  },
+  {
+    "question": "¿Qué diferencia básica se menciona entre las pinzas de disección y las de aprehensión?",
+    "options": [
+      "Las de aprehensión poseen cremallera",
+      "Las de disección siempre tienen motor",
+      "Las de aprehensión son desechables por definición",
+      "No existe ninguna diferencia"
+    ],
+    "correct": 0,
+    "explanation": "El tema indica que las pinzas de aprehensión comparten la característica de poseer cremallera."
+  },
+  {
+    "question": "¿Para qué se utilizan las pinzas de Allis?",
+    "options": [
+      "Para sujetar tejidos; por ejemplo, el intestino",
+      "Para explorar la audición",
+      "Para medir la presión arterial",
+      "Para aplicar grapas"
+    ],
+    "correct": 0,
+    "explanation": "Las pinzas de Allis tienen capacidad de sujeción y pueden emplearse, por ejemplo, para sujetar el intestino."
+  },
+  {
+    "question": "¿Qué uso tienen las pinzas de Duval-Collin y Lovelace?",
+    "options": [
+      "Sujetar tejido pulmonar",
+      "Cortar costillas",
+      "Retirar puntos de sutura",
+      "Medir la altura"
+    ],
+    "correct": 0,
+    "explanation": "Ambas se utilizan para sujetar tejido pulmonar; las puntas de Duval-Collin son rectas y las de Lovelace curvadas."
+  },
+  {
+    "question": "¿Qué característica tienen las pinzas de Babcock?",
+    "options": [
+      "Extremos fenestrados y cóncavos que permiten sujetar sin dañar los tejidos",
+      "Puntas afiladas para fijar campos",
+      "Hojas anchas para cortar tejidos",
+      "Una pantalla digital"
+    ],
+    "correct": 0,
+    "explanation": "Las Babcock tienen extremos fenestrados y cóncavos y también se conocen como pinzas de farolillo."
+  },
+  {
+    "question": "¿Cómo se conocen también las pinzas de Foerster?",
+    "options": [
+      "Portaalgodones",
+      "Pinzas mosquito",
+      "Pinzas de campo cangrejo",
+      "Pinzas de Magill"
+    ],
+    "correct": 0,
+    "explanation": "Las pinzas de Foerster también se denominan portaalgodones y terminan en óvalos fenestrados."
+  },
+  {
+    "question": "¿Cuál es la finalidad del instrumental de hemostasia?",
+    "options": [
+      "Cerrar la luz de vasos sanguíneos para impedir la hemorragia",
+      "Separar los bordes de una herida",
+      "Cortar hilos de sutura",
+      "Medir la saturación de oxígeno"
+    ],
+    "correct": 0,
+    "explanation": "El instrumental de hemostasia se usa para cerrar vasos sanguíneos rotos o que deben seccionarse."
+  },
+  {
+    "question": "¿Para qué se utilizan las pinzas mosquito o de Halsted?",
+    "options": [
+      "Para clampar pequeños vasos",
+      "Para sujetar el tejido pulmonar",
+      "Para cortar yesos",
+      "Para retirar grapas"
+    ],
+    "correct": 0,
+    "explanation": "Las pinzas mosquito o Halsted, rectas o curvas, se utilizan para clampar pequeños vasos."
+  },
+  {
+    "question": "¿Qué caracteriza a las pinzas de hemostasia estáticas?",
+    "options": [
+      "Disponen de un cierre en cremallera que puede dejarse en una posición",
+      "Tienen siempre puntas fenestradas",
+      "Son aparatos eléctricos",
+      "Se usan para explorar la nariz"
+    ],
+    "correct": 0,
+    "explanation": "El cierre en cremallera permite mantener la pinza cerrada en una posición determinada."
+  },
+  {
+    "question": "¿Para qué se utilizan los separadores?",
+    "options": [
+      "Para facilitar la exposición de los tejidos durante la cirugía",
+      "Para suturar los tejidos",
+      "Para medir la presión arterial",
+      "Para cortar suturas"
+    ],
+    "correct": 0,
+    "explanation": "Los separadores facilitan la exposición de los tejidos durante una intervención."
+  },
+  {
+    "question": "¿Qué función tienen las pinzas de campo?",
+    "options": [
+      "Fijar los paños o campos quirúrgicos",
+      "Cerrar vasos sanguíneos",
+      "Administrar sueros",
+      "Explorar el oído"
+    ],
+    "correct": 0,
+    "explanation": "Las pinzas de campo fijan los paños quirúrgicos para mantener delimitado el campo operatorio."
+  },
+  {
+    "question": "¿Qué son las suturas quirúrgicas?",
+    "options": [
+      "Materiales para ligar vasos sanguíneos o aproximar tejidos",
+      "Instrumentos para medir la presión arterial",
+      "Aparatos para administrar aerosoles",
+      "Material destinado únicamente a limpiar superficies"
+    ],
+    "correct": 0,
+    "explanation": "El tema define las suturas como materiales usados para ligar vasos sanguíneos o aproximar tejidos."
+  },
+  {
+    "question": "¿Qué significa que una sutura sea absorbible?",
+    "options": [
+      "Que el organismo la degrada o integra y no es preciso retirarla tras la cicatrización",
+      "Que siempre debe retirarse al día siguiente",
+      "Que está fabricada exclusivamente de metal",
+      "Que no puede entrar en contacto con tejidos"
+    ],
+    "correct": 0,
+    "explanation": "Las suturas absorbibles son digeridas e integradas por el organismo; se utilizan, por ejemplo, en órganos internos y tejido subcutáneo."
+  },
+  {
+    "question": "¿Qué caracteriza a una sutura no absorbible?",
+    "options": [
+      "Debe retirarse tras la cicatrización, según el tema",
+      "El organismo siempre la integra por completo",
+      "Solo se utiliza para microcirugía",
+      "No puede ser sintética"
+    ],
+    "correct": 0,
+    "explanation": "El tema distingue las suturas no absorbibles porque deben retirarse tras la cicatrización."
+  },
+  {
+    "question": "¿Cuál es un ejemplo de sutura natural citado en el tema?",
+    "options": [
+      "La seda",
+      "El nailon",
+      "El polipropileno",
+      "El acero inoxidable"
+    ],
+    "correct": 0,
+    "explanation": "La seda aparece como ejemplo de material de sutura natural."
+  },
+  {
+    "question": "¿Cuál es un ejemplo de material de sutura sintético citado en el tema?",
+    "options": [
+      "Nailon",
+      "Seda",
+      "Algodón",
+      "Gasas"
+    ],
+    "correct": 0,
+    "explanation": "El nailon se cita como ejemplo de material sintético de sutura."
+  },
+  {
+    "question": "¿Qué es una sutura monofilamento?",
+    "options": [
+      "Está compuesta por un solo hilo",
+      "Está formada por varios hilos trenzados",
+      "Es siempre metálica",
+      "No tiene calibre"
+    ],
+    "correct": 0,
+    "explanation": "Monofilamento significa que la sutura se compone de un solo hilo."
+  },
+  {
+    "question": "¿Qué ocurre con el grosor en el sistema de numeración USP o de los ceros?",
+    "options": [
+      "Disminuye a medida que aumenta el número de ceros",
+      "Aumenta siempre con cada cero",
+      "No guarda relación con los ceros",
+      "Todas las suturas tienen el mismo grosor"
+    ],
+    "correct": 0,
+    "explanation": "En la nomenclatura USP, cuanto mayor es el número de ceros, más fino es el hilo."
+  },
+  {
+    "question": "Según el tema, ¿qué tipo de aguja de sutura es la más utilizada?",
+    "options": [
+      "Curva, manejada con portaagujas",
+      "Recta, siempre manejada con los dedos",
+      "Recta con ojo, reutilizable",
+      "Triangular fija al bisturí"
+    ],
+    "correct": 0,
+    "explanation": "El tema señala que la aguja curva es la más utilizada y se maneja con el portaagujas."
+  },
+  {
+    "question": "¿Qué información puede aparecer en el envase del material de sutura?",
+    "options": [
+      "Tipo de material, calibre, tipo de aguja y caducidad",
+      "Solo el nombre del hospital",
+      "Únicamente el color del hilo",
+      "Solo el precio"
+    ],
+    "correct": 0,
+    "explanation": "El envase recoge datos como material, calibre, tipo de aguja y fecha de caducidad."
+  },
+  {
+    "question": "¿Para qué sirven las grapadoras quirúrgicas?",
+    "options": [
+      "Para aplicar grapas metálicas",
+      "Para retirar secreciones",
+      "Para medir la presión arterial",
+      "Para cortar huesos"
+    ],
+    "correct": 0,
+    "explanation": "Las grapadoras aplican grapas metálicas y se presentan estériles; pueden ser desechables o recargables."
+  },
+  {
+    "question": "¿Qué diferencia hay entre una grapadora desechable y una recargable?",
+    "options": [
+      "La desechable se descarta al agotarse la carga; la recargable admite una carga nueva",
+      "La recargable no utiliza grapas",
+      "La desechable se esteriliza siempre en el centro",
+      "No hay ninguna diferencia"
+    ],
+    "correct": 0,
+    "explanation": "La carga agotada de una grapadora recargable puede sustituirse por otra carga envasada estéril."
+  },
+  {
+    "question": "¿Cómo actúa el quitagrapas?",
+    "options": [
+      "Presiona el punto medio de la grapa para que sus extremos salgan con facilidad",
+      "Corta el hueso",
+      "Cierra vasos sanguíneos",
+      "Mide la profundidad de una herida"
+    ],
+    "correct": 0,
+    "explanation": "El quitagrapas ejerce presión sobre el centro de la grapa para facilitar su retirada."
+  },
+  {
+    "question": "¿Para qué sirven los aspiradores quirúrgicos?",
+    "options": [
+      "Mantener el campo operatorio sin sangre y serosidad",
+      "Fijar paños quirúrgicos",
+      "Cortar suturas",
+      "Medir la altura"
+    ],
+    "correct": 0,
+    "explanation": "Los aspiradores ayudan a retirar sangre y serosidad para mantener despejado el campo operatorio."
+  },
+  {
+    "question": "¿Qué instrumento se destina a cortar hueso, colocar material de osteosíntesis o limpiar focos de fractura?",
+    "options": [
+      "Instrumental de cirugía traumatológica",
+      "Instrumental de exploración auditiva",
+      "Material de curas exclusivamente",
+      "Instrumental de sutura únicamente"
+    ],
+    "correct": 0,
+    "explanation": "La cirugía traumatológica emplea sierras, gubias, martillos, escoplos, periostótomos, cizallas, pinzas para hueso y taladros, entre otros."
+  },
+  {
+    "question": "¿Para qué sirve un estilete?",
+    "options": [
+      "Para conocer la profundidad y dirección de una herida",
+      "Para medir el pulso",
+      "Para aplicar grapas",
+      "Para administrar medicación endovenosa"
+    ],
+    "correct": 0,
+    "explanation": "El estilete puede ser puntiagudo o abotonado y permite explorar la profundidad y dirección de una herida."
+  },
+  {
+    "question": "¿Cuál es la utilidad de una sonda acanalada?",
+    "options": [
+      "Evidenciar el trazado de fístulas y drenar heridas o abscesos",
+      "Medir la presión arterial",
+      "Sujetar el pulmón",
+      "Retirar grapas"
+    ],
+    "correct": 0,
+    "explanation": "La sonda acanalada se usa para evidenciar fístulas y facilitar el drenaje de heridas y abscesos."
+  },
+  {
+    "question": "¿Para qué se utiliza el trócar según el tema?",
+    "options": [
+      "Para realizar punciones y tomar muestras para biopsia",
+      "Para registrar el ritmo cardíaco",
+      "Para cortar vendajes",
+      "Para medir el peso"
+    ],
+    "correct": 0,
+    "explanation": "El trócar es un tubo metálico utilizado para punciones y toma de muestras para biopsia."
+  },
+  {
+    "question": "¿Qué función tienen las pinzas de Magill?",
+    "options": [
+      "Ayudar a dirigir el tubo endotraqueal hacia la laringe",
+      "Sujetar paños quirúrgicos",
+      "Cerrar pequeños vasos",
+      "Cortar suturas"
+    ],
+    "correct": 0,
+    "explanation": "También pueden utilizarse para introducir sondas o extraer cuerpos extraños de la faringe."
+  },
+  {
+    "question": "¿Para qué sirve una báscula con tallímetro?",
+    "options": [
+      "Para medir el peso y la altura del paciente",
+      "Para medir la presión arterial",
+      "Para explorar el oído",
+      "Para registrar la actividad eléctrica del corazón"
+    ],
+    "correct": 0,
+    "explanation": "La báscula con tallímetro permite obtener el peso y la altura."
+  },
+  {
+    "question": "¿Qué mide un esfigmomanómetro o tensiómetro?",
+    "options": [
+      "La presión arterial de forma indirecta",
+      "La temperatura ambiental",
+      "La actividad eléctrica del corazón",
+      "La saturación de oxígeno exclusivamente"
+    ],
+    "correct": 0,
+    "explanation": "El tensiómetro comprime externamente la arteria y los tejidos adyacentes para estimar la presión arterial."
+  },
+  {
+    "question": "¿Para qué se utiliza un otoscopio?",
+    "options": [
+      "Para explorar el oído",
+      "Para explorar el fondo del ojo",
+      "Para escuchar el corazón",
+      "Para medir la altura"
+    ],
+    "correct": 0,
+    "explanation": "El otoscopio es un instrumento de exploración del oído."
+  },
+  {
+    "question": "¿Qué registra el electrocardiógrafo?",
+    "options": [
+      "La actividad eléctrica del corazón",
+      "La presión arterial",
+      "La imagen de órganos mediante ultrasonidos",
+      "La velocidad de infusión de un suero"
+    ],
+    "correct": 0,
+    "explanation": "El electrocardiógrafo registra la actividad eléctrica cardíaca."
+  },
+  {
+    "question": "¿Qué hace un pulsioxímetro?",
+    "options": [
+      "Mide la saturación de oxígeno y el pulso",
+      "Mide la altura",
+      "Retira secreciones",
+      "Administra fármacos por vía endovenosa"
+    ],
+    "correct": 0,
+    "explanation": "El tema propone usar el pulsioxímetro para medir saturación de oxígeno y pulso."
+  },
+  {
+    "question": "¿Qué función tiene un monitor desfibrilador?",
+    "options": [
+      "Transmitir una carga eléctrica para tratar alteraciones graves de la actividad cardíaca",
+      "Obtener imágenes mediante ultrasonidos",
+      "Administrar medicación a ritmo constante",
+      "Explorar cavidades corporales"
+    ],
+    "correct": 0,
+    "explanation": "El monitor desfibrilador puede realizar desfibrilación, cardioversión y función de marcapasos."
+  },
+  {
+    "question": "¿Para qué sirve una bomba de perfusión endovenosa?",
+    "options": [
+      "Administrar fluidos o medicación a un ritmo determinado",
+      "Medir la presión arterial",
+      "Retirar grapas",
+      "Cortar tejidos"
+    ],
+    "correct": 0,
+    "explanation": "La bomba permite controlar la velocidad de infusión según las necesidades del paciente."
+  },
+  {
+    "question": "¿Cuál es una función del nebulizador?",
+    "options": [
+      "Humidificar el aire o administrar fármacos para terapia respiratoria",
+      "Registrar el ritmo cardíaco",
+      "Medir la altura",
+      "Fijar el campo quirúrgico"
+    ],
+    "correct": 0,
+    "explanation": "El nebulizador puede humidificar el aire o administrar fármacos por vía respiratoria en determinadas circunstancias."
+  },
+  {
+    "question": "¿Qué permite hacer un endoscopio?",
+    "options": [
+      "Visualizar el interior de un órgano hueco o una cavidad corporal",
+      "Medir el peso del paciente",
+      "Cerrar vasos sanguíneos",
+      "Aplicar grapas metálicas"
+    ],
+    "correct": 0,
+    "explanation": "El endoscopio se introduce por un orificio natural o una pequeña incisión y puede servir para explorar, operar o tomar muestras."
+  },
+  {
+    "question": "¿Cómo obtiene imágenes un ecógrafo?",
+    "options": [
+      "Mediante ultrasonidos",
+      "Mediante una carga eléctrica aplicada al tórax",
+      "Mediante rayos de luz visible únicamente",
+      "Mediante la medición de la presión arterial"
+    ],
+    "correct": 0,
+    "explanation": "El ecógrafo utiliza ultrasonidos para obtener imágenes de estructuras internas."
+  },
+  {
+    "question": "¿Cuál es una ventaja del material desechable señalada en el tema?",
+    "options": [
+      "Reduce problemas de higiene y transmisión de infecciones",
+      "Siempre puede reutilizarse tras aclararlo",
+      "No necesita eliminarse de forma adecuada",
+      "Obliga a aumentar los costes de esterilización"
+    ],
+    "correct": 0,
+    "explanation": "El material de un solo uso puede reducir riesgos de transmisión y elimina los costes de limpieza, desinfección y esterilización del material reutilizable."
+  },
+  {
+    "question": "¿Cuál de estos grupos incluye material desechable habitual?",
+    "options": [
+      "Agujas, jeringas, catéteres y lancetas",
+      "Bisturí eléctrico y ecógrafo",
+      "Monitor desfibrilador y báscula",
+      "Tensiómetro y tallímetro"
+    ],
+    "correct": 0,
+    "explanation": "El tema incluye agujas, jeringas, catéteres y lancetas entre los materiales de punción de un solo uso."
+  },
+  {
+    "question": "¿Qué se debe hacer con el material desechable una vez utilizado?",
+    "options": [
+      "Desecharlo de forma adecuada según el caso",
+      "Guardarlo en el carro para el siguiente paciente",
+      "Reutilizarlo sin procesar",
+      "Dejarlo sobre la bandeja"
+    ],
+    "correct": 0,
+    "explanation": "El tema indica que, después de utilizarlo, debe desecharse de la forma adecuada."
+  },
+  {
+    "question": "¿Para qué se utiliza el carro de curas?",
+    "options": [
+      "Transportar a la habitación el material necesario para realizar curas",
+      "Transportar exclusivamente ropa limpia",
+      "Almacenar permanentemente material contaminado",
+      "Sustituir al servicio de esterilización"
+    ],
+    "correct": 0,
+    "explanation": "El carro de curas permite llevar al paciente el material necesario para realizar una cura."
+  },
+  {
+    "question": "¿Dónde se guarda el carro de curas cuando no se utiliza, según el tema?",
+    "options": [
+      "En el control de enfermería",
+      "En el almacén de lencería",
+      "En la habitación del paciente",
+      "En el quirófano siempre"
+    ],
+    "correct": 0,
+    "explanation": "El material indica que, cuando no se usa, el carro se guarda en el control de enfermería."
+  },
+  {
+    "question": "¿A quién corresponde revisar, reponer y limpiar el carro de curas?",
+    "options": [
+      "Al TCAE",
+      "Exclusivamente al paciente",
+      "Al personal de mantenimiento del edificio",
+      "A la persona que visite al paciente"
+    ],
+    "correct": 0,
+    "explanation": "El tema atribuye al TCAE la revisión, reposición y limpieza del carro de curas."
+  },
+  {
+    "question": "¿Con qué frecuencia mínima indica el tema que debe limpiarse el carro de curas?",
+    "options": [
+      "Al menos una vez al día",
+      "Una vez al mes",
+      "Solo cuando se vea suciedad",
+      "Una vez por semana"
+    ],
+    "correct": 0,
+    "explanation": "El texto indica que debe limpiarse al menos una vez al día, aprovechando para reponer el material usado."
+  },
+  {
+    "question": "¿En qué dirección debe realizarse la limpieza del carro de curas?",
+    "options": [
+      "De arriba abajo, desde los estantes superiores a los inferiores",
+      "De abajo arriba",
+      "Solo de izquierda a derecha",
+      "En cualquier dirección, sin orden"
+    ],
+    "correct": 0,
+    "explanation": "El tema indica comenzar por los estantes superiores y continuar hacia los inferiores."
+  },
+  {
+    "question": "¿Qué se hace antes de limpiar los estantes del carro de curas, según el procedimiento descrito?",
+    "options": [
+      "Ponerse guantes y retirar la bolsa de basura; después retirar el material",
+      "Añadir material nuevo sin retirar el anterior",
+      "Pulverizar el carro con el material colocado",
+      "Guardar el carro sin limpiar"
+    ],
+    "correct": 0,
+    "explanation": "El procedimiento comienza con guantes y retirada de la bolsa de residuos; después se retira el material para limpiar las superficies."
+  },
+  {
+    "question": "¿Cuál de estos elementos puede formar parte de la dotación del carro de curas?",
+    "options": [
+      "Gasas estériles, apósitos y vendas",
+      "Solo aparatos eléctricos de diagnóstico",
+      "Únicamente ropa de cama",
+      "Exclusivamente material de oficina"
+    ],
+    "correct": 0,
+    "explanation": "La dotación incluye gasas estériles, torundas, apósitos, paños estériles, esparadrapo y vendas, entre otros elementos."
+  },
+  {
+    "question": "¿Qué solución se menciona para la limpieza del carro de curas?",
+    "options": [
+      "Una solución desinfectante, siguiendo sus instrucciones de uso",
+      "Perfume ambiental",
+      "Agua con cualquier mezcla de productos",
+      "Solo aire a presión"
+    ],
+    "correct": 0,
+    "explanation": "El tema describe limpiar con una gasa y solución desinfectante y seguir las instrucciones del fabricante."
+  },
+  {
+    "question": "¿Qué se utiliza para confeccionar torundas en la técnica descrita?",
+    "options": [
+      "Gasas y guantes desechables",
+      "Algodón y una grapadora",
+      "Una sonda acanalada",
+      "Un bisturí eléctrico"
+    ],
+    "correct": 0,
+    "explanation": "Los materiales enumerados para la confección de torundas son guantes desechables y gasas."
+  },
+  {
+    "question": "¿Qué se indica al inicio de la técnica de confección de torundas?",
+    "options": [
+      "Higienizar las manos, ponerse guantes y desplegar una gasa sobre una mesa limpia y desinfectada",
+      "Enrollar la gasa directamente sin preparar la superficie",
+      "Colocar primero la torunda en el carro",
+      "Registrar la técnica antes de comenzar"
+    ],
+    "correct": 0,
+    "explanation": "El protocolo comienza con higiene de manos, colocación de guantes y preparación de la gasa sobre una superficie limpia y desinfectada."
+  },
+  {
+    "question": "¿Qué se indica al finalizar la técnica de confección de torundas?",
+    "options": [
+      "Quitarse los guantes, lavarse las manos y registrar la técnica",
+      "Guardar los guantes para reutilizarlos",
+      "Dejar la mesa sin limpiar",
+      "Omitir siempre el registro"
+    ],
+    "correct": 0,
+    "explanation": "Los últimos pasos del protocolo son retirarse los guantes, lavarse las manos y registrar la técnica realizada."
+  },
+  {
+    "question": "¿Qué tijeras señala el tema para cortar puntos de sutura?",
+    "options": [
+      "Tijeras de Littauer",
+      "Tijeras de Kelly",
+      "Tijeras de cizalla",
+      "Tijeras Lister"
+    ],
+    "correct": 0,
+    "explanation": "En el apartado de autoevaluación del tema, la opción correcta para cortar puntos de sutura son las tijeras de Littauer."
+  },
+  {
+    "question": "¿Qué tipo de sutura es la seda según la clasificación del tema?",
+    "options": [
+      "Natural y no absorbible",
+      "Natural y absorbible",
+      "Sintética monofilamento absorbible",
+      "Metálica"
+    ],
+    "correct": 0,
+    "explanation": "La autoevaluación del tema identifica la seda como una sutura natural y no absorbible."
+  },
+  {
+    "question": "¿Qué tipo de separadores se menciona en la clasificación del tema?",
+    "options": [
+      "Estáticos y dinámicos",
+      "Desechables y eléctricos",
+      "Naturales y sintéticos",
+      "Rectos y fenestrados"
+    ],
+    "correct": 0,
+    "explanation": "El apartado de autoevaluación distingue los separadores estáticos y dinámicos."
+  },
+  {
+    "question": "¿Qué instrumento de exploración se utiliza para el oído?",
+    "options": [
+      "Otoscopio",
+      "Abrebocas",
+      "Estilete",
+      "Trócar"
+    ],
+    "correct": 0,
+    "explanation": "El otoscopio se utiliza para explorar el oído."
+  },
+  {
+    "question": "¿Cuál de estos materiales no aparece como material desechable habitual en el tema?",
+    "options": [
+      "Espéculo nasal reutilizable de metal",
+      "Guante estéril",
+      "Vendaje",
+      "Ropa de quirófano"
+    ],
+    "correct": 0,
+    "explanation": "El tema enumera guantes, vendajes y ropa de quirófano entre materiales desechables; la opción metálica reutilizable no aparece en esa lista."
+  },
+{
+  "question": "¿Qué componente está presente solo en algunos instrumentos articulados y permite mantenerlos cerrados?",
+  "options": [
+    "La cremallera o cierre",
+    "La parte activa",
+    "El mango de plástico",
+    "La punta abotonada"
+  ],
+  "correct": 0,
+  "explanation": "El tema señala que algunos instrumentos incorporan una cremallera o sistema de cierre, además de la parte activa, articulación y mangos.",
+  "category": "Generalidades del instrumental"
+},
+{
+  "question": "Según el tema, ¿qué composición aproximada se atribuye al vitalio?",
+  "options": [
+    "65 % de cobalto, 25 % de cromo y 6 % de molibdeno, entre otros componentes",
+    "65 % de algodón y 25 % de plástico",
+    "Solo hierro y carbono",
+    "Principalmente titanio y oro"
+  ],
+  "correct": 0,
+  "explanation": "El documento cita para el vitalio una composición aproximada de 65 % de cobalto, 25 % de cromo y 6 % de molibdeno, además de otros elementos.",
+  "category": "Generalidades del instrumental"
+},
+{
+  "question": "¿Qué material se menciona entre los utilizados en la fabricación del instrumental?",
+  "options": [
+    "Carburo de tungsteno",
+    "Cartón prensado",
+    "Látex natural",
+    "Vidrio corriente"
+  ],
+  "correct": 0,
+  "explanation": "Además del acero inoxidable y el titanio, el tema menciona materiales como el carburo de tungsteno.",
+  "category": "Generalidades del instrumental"
+},
+{
+  "question": "¿Qué diferencia general existe entre las ramas y la parte activa de un instrumento?",
+  "options": [
+    "Las ramas son los brazos del instrumento; la parte activa realiza la acción sobre el tejido o material",
+    "Son nombres distintos para el envase estéril",
+    "Las ramas siempre miden la presión arterial",
+    "La parte activa es siempre el mango"
+  ],
+  "correct": 0,
+  "explanation": "El tema identifica las ramas como partes del instrumento y reserva el nombre de parte activa para la zona que ejecuta la acción o contacta con el tejido.",
+  "category": "Generalidades del instrumental"
+},
+{
+  "question": "¿Qué números de mango de bisturí se indican como habituales en el tema?",
+  "options": [
+    "3 y 4",
+    "1 y 2 exclusivamente",
+    "7 y 8",
+    "10 y 12"
+  ],
+  "correct": 0,
+  "explanation": "El documento destaca los mangos de bisturí números 3 y 4 como los más comunes; la hoja que se acopla depende del uso.",
+  "category": "Corte y diéresis"
+},
+{
+  "question": "¿Qué rasgo caracteriza a las hojas del bisturí manual?",
+  "options": [
+    "Hay distintos tamaños y formas, según la finalidad, y suelen ser de un solo uso",
+    "Todas tienen exactamente la misma forma",
+    "Son siempre reutilizables y se afilan en cada uso",
+    "Se emplean para medir cavidades"
+  ],
+  "correct": 0,
+  "explanation": "Las hojas pueden tener diferentes tamaños y formas y, según el tema, normalmente son de un solo uso.",
+  "category": "Corte y diéresis"
+},
+{
+  "question": "¿En qué contexto menciona el tema el bisturí desechable con frecuencia?",
+  "options": [
+    "En consultas",
+    "Como aparato para registrar electrocardiogramas",
+    "Para sujetar campos quirúrgicos exclusivamente",
+    "Para cortar costillas"
+  ],
+  "correct": 0,
+  "explanation": "El tema indica que los bisturíes desechables se utilizan con frecuencia en consultas y se presentan esterilizados individualmente.",
+  "category": "Corte y diéresis"
+},
+{
+  "question": "¿Cuál es la diferencia señalada entre el bisturí desechable y el escalpelo de una pieza?",
+  "options": [
+    "El desechable tiene mango plástico y hoja de acero; el escalpelo integra mango y hoja en una pieza y puede afilarse",
+    "El escalpelo funciona con ultrasonidos y el desechable con láser",
+    "Ambos son siempre idénticos y de un solo uso",
+    "El desechable tiene una cremallera y el escalpelo mide la saturación"
+  ],
+  "correct": 0,
+  "explanation": "El tema describe el bisturí desechable como mango plástico más hoja de acero inoxidable esterilizada; el escalpelo es de una pieza, puede afilarse y esterilizarse, aunque está en desuso.",
+  "category": "Corte y diéresis"
+},
+{
+  "question": "¿Qué dos efectos asocia el tema al bisturí eléctrico?",
+  "options": [
+    "Corte y coagulación",
+    "Aspiración y exploración",
+    "Sujeción y separación",
+    "Medición y registro"
+  ],
+  "correct": 0,
+  "explanation": "La corriente eléctrica de alta frecuencia genera calor y permite cortar y coagular.",
+  "category": "Corte y diéresis"
+},
+{
+  "question": "¿En qué especialidades sitúa el tema el uso del bisturí eléctrico?",
+  "options": [
+    "Dermatología y cirugía plástica",
+    "Solo podología",
+    "Únicamente cardiología diagnóstica",
+    "Exclusivamente traumatología infantil"
+  ],
+  "correct": 0,
+  "explanation": "El documento menciona el bisturí eléctrico en dermatología y cirugía plástica.",
+  "category": "Corte y diéresis"
+},
+{
+  "question": "¿Qué afirmación diferencia el bisturí láser del ultrasónico según el tema?",
+  "options": [
+    "El láser emplea luz láser; el ultrasónico utiliza ultrasonidos para cortar y coagular",
+    "El láser mide la tensión y el ultrasónico registra el corazón",
+    "Ambos son pinzas de sujeción",
+    "El ultrasónico solo corta yeso"
+  ],
+  "correct": 0,
+  "explanation": "El tema diferencia ambas tecnologías: luz láser para el bisturí láser y ultrasonidos para el bisturí ultrasónico, al que también atribuye corte y coagulación.",
+  "category": "Corte y diéresis"
+},
+{
+  "question": "¿Qué tijeras se asocian de forma específica al corte de hilos o suturas en la autoevaluación?",
+  "options": [
+    "Littauer",
+    "Lister",
+    "Cizalla",
+    "Potts-Smith"
+  ],
+  "correct": 0,
+  "explanation": "En la autoevaluación del tema se señala Littauer para cortar puntos de sutura. Lister se relaciona con el corte de vendajes y su extremo abotonado protege la piel.",
+  "category": "Corte y diéresis"
+},
+{
+  "question": "¿Qué detalle de las tijeras Lister ayuda a proteger al paciente?",
+  "options": [
+    "El extremo abotonado o romo que se desliza bajo el vendaje",
+    "Las puntas triangulares fenestradas",
+    "La cremallera de tres posiciones",
+    "El mango con aislamiento eléctrico"
+  ],
+  "correct": 0,
+  "explanation": "Las tijeras Lister suelen ser anguladas y tienen un extremo abotonado para ayudar a proteger la piel al cortar vendajes.",
+  "category": "Corte y diéresis"
+},
+{
+  "question": "¿Qué combinación describe mejor las tijeras de cizalla para escayola?",
+  "options": [
+    "Mangos largos y fuertes con hojas cortas y anchas",
+    "Hojas finísimas para disección oftálmica",
+    "Puntas triangulares para sujetar pulmón",
+    "Puntas ovales para portar gasas"
+  ],
+  "correct": 0,
+  "explanation": "La cizalla para yeso tiene mangos robustos y largos y hojas cortas y anchas; permite cortar capas de vendaje rígido o semirrígido.",
+  "category": "Corte y diéresis"
+},
+{
+  "question": "¿Para qué se utiliza la cizalla descrita en el tema?",
+  "options": [
+    "Cortar capas de vendaje rígido o semirrígido",
+    "Aislar vasos sanguíneos con disección fina",
+    "Retirar grapas quirúrgicas",
+    "Sujetar los campos del quirófano"
+  ],
+  "correct": 0,
+  "explanation": "El tema la destina al corte de capas de escayola o vendaje rígido/semirrígido.",
+  "category": "Corte y diéresis"
+},
+{
+  "question": "¿Qué tijera presenta hojas robustas y anchas y se asocia a tejidos gruesos?",
+  "options": [
+    "Mayo",
+    "Iris",
+    "Metzenbaum",
+    "Lister"
+  ],
+  "correct": 0,
+  "explanation": "Las tijeras Mayo tienen hojas más anchas y robustas y se emplean para tejidos de mayor grosor o volumen.",
+  "category": "Corte y diéresis"
+},
+{
+  "question": "¿Qué diferencia de uso se destaca entre Iris y Metzenbaum?",
+  "options": [
+    "Iris se usa en disecciones muy finas y delicadas; Metzenbaum para disección fina y aislamiento de vasos o conductos",
+    "Iris corta escayola y Metzenbaum costillas",
+    "Iris retira grapas y Metzenbaum fija campos",
+    "Son nombres equivalentes para las tijeras de Mayo"
+  ],
+  "correct": 0,
+  "explanation": "El tema relaciona Iris con disecciones especialmente finas, por ejemplo en boca, cirugía plástica u oftalmología; Metzenbaum con disección fina y aislamiento de vasos o conductos.",
+  "category": "Corte y diéresis"
+},
+{
+  "question": "¿Qué instrumento se indica para cortar costillas en cirugía torácica?",
+  "options": [
+    "Costótomo",
+    "Cureta",
+    "Portaagujas Mathieu",
+    "Separador Farabeuf"
+  ],
+  "correct": 0,
+  "explanation": "El costótomo es el instrumento de corte óseo citado para las costillas en cirugía torácica.",
+  "category": "Corte y diéresis"
+},
+{
+  "question": "¿Qué característica se atribuye a la sierra oscilante utilizada para escayola o hueso?",
+  "options": [
+    "Su movimiento oscilante permite cortar el yeso o hueso sin lesionar los tejidos blandos en el uso descrito",
+    "Sirve para coagular vasos mediante alta frecuencia",
+    "Se utiliza para recoger gasas",
+    "Mide el diámetro de una sutura"
+  ],
+  "correct": 0,
+  "explanation": "El tema describe una sierra oscilante para cortar escayola o hueso evitando la lesión de tejidos blandos.",
+  "category": "Corte y diéresis"
+},
+{
+  "question": "¿Cuál es la función de la legra o cureta citada en el tema?",
+  "options": [
+    "Retirar tejido del fondo de una cavidad; se menciona especialmente en ginecología",
+    "Fijar los paños quirúrgicos",
+    "Administrar un suero a velocidad controlada",
+    "Retirar grapas metálicas"
+  ],
+  "correct": 0,
+  "explanation": "La legra/cureta permite raspar o retirar tejido del fondo de una cavidad; el documento la relaciona generalmente con ginecología.",
+  "category": "Corte y diéresis"
+},
+{
+  "question": "¿Cómo se describe la estructura básica de las pinzas de disección?",
+  "options": [
+    "Dos ramas metálicas planas unidas por un extremo, diseñadas para permanecer abiertas",
+    "Dos hojas circulares que se conectan a una pantalla",
+    "Un mango con una hoja reemplazable",
+    "Un tubo hueco con émbolo"
+  ],
+  "correct": 0,
+  "explanation": "El tema describe dos ramas metálicas planas unidas por uno de sus extremos; su diseño hace que permanezcan abiertas y se cierren al presionarlas.",
+  "category": "Pinzas y hemostasia"
+},
+{
+  "question": "¿Qué rasgo exterior se atribuye a las pinzas de disección?",
+  "options": [
+    "Superficie externa estriada para facilitar la prensión",
+    "Superficie de vidrio para observar tejidos",
+    "Mangos siempre perforados con cremallera",
+    "Un extremo abotonado como las tijeras Lister"
+  ],
+  "correct": 0,
+  "explanation": "Las ramas presentan estrías exteriores para favorecer la sujeción y el control de la pinza.",
+  "category": "Pinzas y hemostasia"
+},
+{
+  "question": "¿Qué variantes de punta pueden tener las pinzas de disección?",
+  "options": [
+    "Lisas o con dientes",
+    "Solo ovaladas y huecas",
+    "Siempre triangulares",
+    "Exclusivamente abotonadas"
+  ],
+  "correct": 0,
+  "explanation": "El tema distingue pinzas de disección con puntas lisas y con dientes, además de formas rectas, curvas, anguladas o en bayoneta.",
+  "category": "Pinzas y hemostasia"
+},
+{
+  "question": "¿Qué forma de pinza de disección puede facilitar el acceso sin tapar tanto el campo visual?",
+  "options": [
+    "En bayoneta",
+    "Circular cerrada",
+    "Con extremo abotonado de tijera",
+    "De mango telescópico eléctrico"
+  ],
+  "correct": 0,
+  "explanation": "Entre las formas citadas están las pinzas en bayoneta, junto a las rectas, curvas y anguladas.",
+  "category": "Pinzas y hemostasia"
+},
+{
+  "question": "¿Qué variante de pinza Adson destaca el tema para tejido delicado o uso pediátrico?",
+  "options": [
+    "Adson sin dientes",
+    "Adson con puntas triangulares para pulmón",
+    "Adson con punta ovalada fenestrada para gasas",
+    "Adson con cremallera para vasos grandes"
+  ],
+  "correct": 0,
+  "explanation": "El documento menciona la Adson sin dientes para tejido delicado y uso pediátrico.",
+  "category": "Pinzas y hemostasia"
+},
+{
+  "question": "¿Qué papel pueden desempeñar las pinzas de disección durante una sutura?",
+  "options": [
+    "Sujetar los tejidos mientras el portaagujas maneja la aguja",
+    "Retirar grapas ya colocadas",
+    "Medir el calibre de la aguja automáticamente",
+    "Aplicar corriente de alta frecuencia"
+  ],
+  "correct": 0,
+  "explanation": "Las pinzas de disección pueden complementar al portaagujas sujetando o aproximando los tejidos durante la sutura.",
+  "category": "Pinzas y hemostasia"
+},
+{
+  "question": "¿Qué elemento mecánico comparten las pinzas de prensión o aprehensión descritas en el tema?",
+  "options": [
+    "Una cremallera o mecanismo de bloqueo",
+    "Una hoja desechable intercambiable",
+    "Un manómetro",
+    "Una lámpara de luz láser"
+  ],
+  "correct": 0,
+  "explanation": "El tema indica que las pinzas de prensión estudiadas disponen de cremallera para mantener la sujeción.",
+  "category": "Pinzas y hemostasia"
+},
+{
+  "question": "¿Para qué se utiliza la pinza Allis según el tema?",
+  "options": [
+    "Prensión de tejidos, por ejemplo intestinales",
+    "Cortar costillas",
+    "Explorar el oído",
+    "Retirar una grapa de sutura"
+  ],
+  "correct": 0,
+  "explanation": "La Allis se describe como pinza de prensión de tejidos, con el intestino como ejemplo.",
+  "category": "Pinzas y hemostasia"
+},
+{
+  "question": "¿Qué diferencia de forma se indica entre Duval-Collin y Lovelace?",
+  "options": [
+    "Duval-Collin presenta puntas rectas y Lovelace puntas curvas",
+    "Duval-Collin es una tijera y Lovelace una sierra",
+    "Duval-Collin es lisa y desechable, Lovelace mide la presión",
+    "Ambas son pinzas de campo con puntas afiladas"
+  ],
+  "correct": 0,
+  "explanation": "Ambas se citan para sujetar pulmón y tienen puntas triangulares para reducir el traumatismo; la Duval-Collin tiene puntas rectas y la Lovelace curvas.",
+  "category": "Pinzas y hemostasia"
+},
+{
+  "question": "¿Qué rasgo ayuda a identificar la pinza Babcock?",
+  "options": [
+    "Puntas cóncavas fenestradas, descritas como una especie de farolillo",
+    "Punta abotonada para cortar vendajes",
+    "Dos hojas anchas para cortar tejidos gruesos",
+    "Un extremo con una cuchilla de bisturí"
+  ],
+  "correct": 0,
+  "explanation": "El tema caracteriza la Babcock por sus puntas cóncavas y fenestradas, comparadas con un farolillo.",
+  "category": "Pinzas y hemostasia"
+},
+{
+  "question": "¿Qué aspecto de las puntas caracteriza a la pinza Foerster o porta-algodones?",
+  "options": [
+    "Ovaladas y fenestradas",
+    "Triangulares macizas",
+    "Rectas con filo cortante",
+    "Punta plana con cremallera eléctrica"
+  ],
+  "correct": 0,
+  "explanation": "Las Foerster o porta-algodones tienen extremos ovalados y fenestrados para sujetar material como algodón o gasas.",
+  "category": "Pinzas y hemostasia"
+},
+{
+  "question": "¿Cuál es el objetivo principal de una pinza de hemostasia?",
+  "options": [
+    "Pinzar la luz de un vaso para evitar o controlar el sangrado",
+    "Separar permanentemente los bordes de una herida",
+    "Cortar hueso",
+    "Medir la saturación de oxígeno"
+  ],
+  "correct": 0,
+  "explanation": "Las pinzas de hemostasia comprimen o pinzan el vaso sanguíneo para controlar el sangrado.",
+  "category": "Pinzas y hemostasia"
+},
+{
+  "question": "¿Para qué tamaño de vasos se asocia la pinza Mosquito o Halsted?",
+  "options": [
+    "Vasos pequeños",
+    "Costillas",
+    "Grandes superficies de piel",
+    "Solo conductos respiratorios"
+  ],
+  "correct": 0,
+  "explanation": "El tema identifica Mosquito/Halsted como pinza hemostática para vasos pequeños.",
+  "category": "Pinzas y hemostasia"
+},
+{
+  "question": "¿Qué permite la cremallera de una pinza hemostática estática?",
+  "options": [
+    "Mantener el cierre sin ejercer presión manual continua",
+    "Aumentar la saturación de oxígeno",
+    "Cambiar automáticamente la hoja",
+    "Registrar el electrocardiograma"
+  ],
+  "correct": 0,
+  "explanation": "El cierre de cremallera mantiene la pinza cerrada y la hemostasia sin tener que apretar continuamente los mangos.",
+  "category": "Pinzas y hemostasia"
+},
+{
+  "question": "¿Cómo se clasifican los separadores en el tema?",
+  "options": [
+    "Estáticos y dinámicos",
+    "Naturales y sintéticos",
+    "Rectos y desechables únicamente",
+    "Eléctricos y absorbibles"
+  ],
+  "correct": 0,
+  "explanation": "El documento distingue separadores estáticos y dinámicos; entre los ejemplos aparecen Farabeuf, Adson y Roux.",
+  "category": "Separadores y exploración"
+},
+{
+  "question": "¿Cuál de estos instrumentos se presenta como ejemplo de separador?",
+  "options": [
+    "Farabeuf",
+    "Littauer",
+    "Mosquito",
+    "Mathieu"
+  ],
+  "correct": 0,
+  "explanation": "Farabeuf, Adson y Roux se citan en el tema como ejemplos de separadores.",
+  "category": "Separadores y exploración"
+},
+{
+  "question": "¿Qué función tienen las pinzas de campo, como Backhaus?",
+  "options": [
+    "Fijar los paños o campos quirúrgicos",
+    "Sujetar el pulmón durante una resección",
+    "Cortar una costilla",
+    "Medir la tensión arterial"
+  ],
+  "correct": 0,
+  "explanation": "Las pinzas de campo mantienen fijados los paños quirúrgicos; Backhaus aparece en el listado práctico del tema.",
+  "category": "Separadores y exploración"
+},
+{
+  "question": "¿Qué hace el estilete en la exploración de una herida?",
+  "options": [
+    "Permite comprobar su profundidad y dirección",
+    "Mide el pulso",
+    "Aspira secreciones de la vía aérea",
+    "Corta suturas"
+  ],
+  "correct": 0,
+  "explanation": "El tema atribuye al estilete la función de explorar la profundidad y dirección de una herida.",
+  "category": "Separadores y exploración"
+},
+{
+  "question": "¿Qué uso se atribuye a la sonda acanalada?",
+  "options": [
+    "Seguir el trayecto de una fístula y facilitar el drenaje de heridas o abscesos",
+    "Cortar tejido grueso",
+    "Fijar los campos quirúrgicos",
+    "Registrar la actividad eléctrica cardíaca"
+  ],
+  "correct": 0,
+  "explanation": "La sonda acanalada permite explorar el trayecto de una fístula y se menciona también para el drenaje de heridas y abscesos.",
+  "category": "Separadores y exploración"
+},
+{
+  "question": "¿Para qué sirve el trócar según el tema?",
+  "options": [
+    "Para puncionar o tomar una biopsia",
+    "Para aproximar bordes de una herida con grapas",
+    "Para cortar hilos",
+    "Para medir la altura"
+  ],
+  "correct": 0,
+  "explanation": "El trócar se incluye entre los instrumentos de exploración y se utiliza para punción o biopsia.",
+  "category": "Separadores y exploración"
+},
+{
+  "question": "¿Cuál es una función de las pinzas de Magill?",
+  "options": [
+    "Guiar el tubo endotraqueal hacia la laringe; también introducir sondas o retirar cuerpos extraños faríngeos",
+    "Sujetar grapas quirúrgicas",
+    "Cortar la escayola",
+    "Aspirar sangre con conexión a vacío"
+  ],
+  "correct": 0,
+  "explanation": "El tema señala el uso de Magill para orientar el tubo endotraqueal hacia la laringe, introducir sondas o retirar cuerpos extraños de la faringe.",
+  "category": "Separadores y exploración"
+},
+{
+  "question": "¿Qué instrumento del listado práctico se identifica como aspirador?",
+  "options": [
+    "Yankauer",
+    "Backhaus",
+    "Littauer",
+    "Duval-Collin"
+  ],
+  "correct": 0,
+  "explanation": "El aspirador Yankauer aparece en el listado práctico del tema para retirar sangre o secreciones.",
+  "category": "Separadores y exploración"
+},
+{
+  "question": "¿Qué finalidad tienen los instrumentos de traumatología mencionados en el tema?",
+  "options": [
+    "Cortar hueso, colaborar en la osteosíntesis o limpiar una fractura",
+    "Medir el peso del paciente",
+    "Sujetar gasas en el carro de curas",
+    "Explorar únicamente el oído"
+  ],
+  "correct": 0,
+  "explanation": "El grupo incluye sierras, gubias, martillos, escoplos, periostótomos, cizallas, pinzas óseas y taladros para tareas relacionadas con el hueso y las fracturas.",
+  "category": "Separadores y exploración"
+},
+{
+  "question": "¿Cuáles son las dos finalidades generales del material de sutura señaladas en el tema?",
+  "options": [
+    "Ligar vasos sanguíneos y aproximar tejidos",
+    "Explorar cavidades y medir presión",
+    "Cortar huesos y retirar escayola",
+    "Fijar campos y aspirar secreciones"
+  ],
+  "correct": 0,
+  "explanation": "El material de sutura permite ligar vasos y aproximar los bordes de los tejidos.",
+  "category": "Suturas y grapas"
+},
+{
+  "question": "¿Qué ejemplo de sutura natural y no absorbible ofrece la autoevaluación del tema?",
+  "options": [
+    "Seda",
+    "Nailon",
+    "Grapa metálica",
+    "Polvo de talco"
+  ],
+  "correct": 0,
+  "explanation": "La autoevaluación identifica la seda como natural y no absorbible. El documento también menciona el nailon como ejemplo sintético.",
+  "category": "Suturas y grapas"
+},
+{
+  "question": "¿Qué diferencia hay entre una sutura monofilamento y una multifilamento?",
+  "options": [
+    "La monofilamento es un solo filamento y la multifilamento está formada por varios filamentos",
+    "La monofilamento siempre es metálica y la multifilamento de algodón",
+    "La monofilamento se usa para retirar grapas y la multifilamento para medir",
+    "No existe ninguna diferencia de estructura"
+  ],
+  "correct": 0,
+  "explanation": "El tema clasifica los hilos por su estructura en monofilamento y multifilamento.",
+  "category": "Suturas y grapas"
+},
+{
+  "question": "En la numeración USP del hilo, ¿qué indica normalmente que haya más ceros?",
+  "options": [
+    "Un hilo más fino",
+    "Un hilo más grueso",
+    "Que la sutura es metálica",
+    "Que la aguja es recta"
+  ],
+  "correct": 0,
+  "explanation": "Según el tema, en el calibre USP un número con más ceros indica un hilo más fino; la autoevaluación pone 7/0 como ejemplo de microcirugía.",
+  "category": "Suturas y grapas"
+},
+{
+  "question": "¿Qué dato puede aparecer en el envase de una sutura?",
+  "options": [
+    "Material, calibre, tipo de aguja y fecha de caducidad",
+    "Solo el nombre del hospital",
+    "La tensión arterial del paciente",
+    "La temperatura de la sala en tiempo real"
+  ],
+  "correct": 0,
+  "explanation": "El tema indica que el envase identifica, entre otros datos, el material, el calibre, el tipo de aguja y la fecha de caducidad.",
+  "category": "Suturas y grapas"
+},
+{
+  "question": "¿Qué tipo de aguja de sutura se indica como la más utilizada en el tema?",
+  "options": [
+    "Curva, manipulada con portaagujas",
+    "Siempre recta y manipulada con la mano desnuda",
+    "Una hoja de bisturí adaptada",
+    "Una aguja de punción lumbar para todos los casos"
+  ],
+  "correct": 0,
+  "explanation": "El documento indica que la aguja curva es la más utilizada y se maneja mediante un portaagujas.",
+  "category": "Suturas y grapas"
+},
+{
+  "question": "¿Qué diferencia destaca el tema entre los portaagujas Mathieu, Mayo y Gillies?",
+  "options": [
+    "Son modelos de portaagujas; el tema incluye sus nombres como tipos de este instrumento",
+    "Son tres tipos de separador dinámico",
+    "Son tres tipos de bisturí eléctrico",
+    "Son materiales de sutura absorbible"
+  ],
+  "correct": 0,
+  "explanation": "Mathieu, Mayo y Gillies aparecen en el apartado de portaagujas. El tema indica específicamente que el Mathieu se maneja con el pulgar y el dedo corazón.",
+  "category": "Suturas y grapas"
+},
+{
+  "question": "¿Cómo indica el tema que se maneja el portaagujas Mathieu?",
+  "options": [
+    "Con el pulgar y el dedo corazón",
+    "Con ambas manos y sin sujetar el mango",
+    "Con el índice únicamente sobre la punta",
+    "Mediante un pedal"
+  ],
+  "correct": 0,
+  "explanation": "La indicación práctica recogida en el tema es manejar el Mathieu con el pulgar y el dedo corazón.",
+  "category": "Suturas y grapas"
+},
+{
+  "question": "¿Qué hacen las grapadoras quirúrgicas descritas en el tema?",
+  "options": [
+    "Aplican grapas metálicas; pueden ser desechables o recargables",
+    "Retiran suturas usando ultrasonidos",
+    "Cortan hueso mediante una hoja oscilante",
+    "Miden el tamaño de las heridas"
+  ],
+  "correct": 0,
+  "explanation": "Las grapadoras aplican grapas metálicas y pueden ser de un solo uso o permitir recargas; el conjunto se presenta estéril.",
+  "category": "Suturas y grapas"
+},
+{
+  "question": "¿Cómo actúa el quitagrapas descrito en el tema?",
+  "options": [
+    "Presiona el centro de la grapa para que sobresalgan sus extremos y poder retirarla",
+    "Corta el hilo en dos puntos",
+    "Disuelve la grapa con una solución",
+    "La empuja más profundamente en la piel"
+  ],
+  "correct": 0,
+  "explanation": "El quitagrapas presiona el centro de la grapa y hace que sus extremos se abran o sobresalgan para facilitar la retirada.",
+  "category": "Suturas y grapas"
+},
+{
+  "question": "¿Qué mide el conjunto de báscula y tallímetro?",
+  "options": [
+    "Peso y talla",
+    "Saturación de oxígeno y pulso",
+    "Actividad eléctrica cardíaca",
+    "Presión de la vía intravenosa"
+  ],
+  "correct": 0,
+  "explanation": "La báscula y el tallímetro se utilizan para obtener el peso y la talla del paciente.",
+  "category": "Aparatos médicos"
+},
+{
+  "question": "¿Qué registra un electrocardiógrafo (ECG)?",
+  "options": [
+    "La actividad eléctrica del corazón",
+    "La saturación de oxígeno exclusivamente",
+    "La altura del paciente",
+    "La presión de una bolsa de suero"
+  ],
+  "correct": 0,
+  "explanation": "El ECG registra la actividad eléctrica cardíaca. El pulsioxímetro, en cambio, mide la saturación de oxígeno y el pulso.",
+  "category": "Aparatos médicos"
+},
+{
+  "question": "¿Qué dos datos muestra habitualmente el pulsioxímetro descrito?",
+  "options": [
+    "Saturación periférica de oxígeno y pulso",
+    "Peso y talla",
+    "Presión arterial y temperatura exclusivamente",
+    "Número de grapas y calibre de sutura"
+  ],
+  "correct": 0,
+  "explanation": "El tema asocia el pulsioxímetro con la saturación periférica de oxígeno (SpO₂) y el pulso.",
+  "category": "Aparatos médicos"
+},
+{
+  "question": "¿Qué funciones reúne el monitor-desfibrilador según el tema?",
+  "options": [
+    "Puede administrar descarga eléctrica, realizar cardioversión y estimulación cardíaca",
+    "Solo mide la talla",
+    "Solo nebuliza medicamentos",
+    "Corta tejidos y coagula vasos"
+  ],
+  "correct": 0,
+  "explanation": "El documento enumera descarga eléctrica, cardioversión y estimulación cardíaca entre las funciones del monitor-desfibrilador.",
+  "category": "Aparatos médicos"
+},
+{
+  "question": "¿Para qué sirve una bomba de infusión intravenosa?",
+  "options": [
+    "Controlar la velocidad de administración de una infusión",
+    "Registrar la actividad eléctrica cardíaca",
+    "Visualizar el interior de un órgano hueco",
+    "Explorar el conducto auditivo"
+  ],
+  "correct": 0,
+  "explanation": "La bomba de infusión permite administrar líquidos por vía intravenosa a una velocidad controlada.",
+  "category": "Aparatos médicos"
+},
+{
+  "question": "¿Cuál es la finalidad del nebulizador mencionada en el tema?",
+  "options": [
+    "Humidificar y administrar medicación por vía respiratoria",
+    "Medir la presión arterial de forma indirecta",
+    "Aplicar grapas metálicas",
+    "Retirar tejido de una cavidad"
+  ],
+  "correct": 0,
+  "explanation": "El nebulizador permite humidificar y administrar medicación respiratoria.",
+  "category": "Aparatos médicos"
+},
+{
+  "question": "¿Qué permite un endoscopio según el tema?",
+  "options": [
+    "Visualizar el interior de un órgano hueco o cavidad y explorar, intervenir o tomar muestras",
+    "Registrar exclusivamente el pulso",
+    "Medir el peso",
+    "Cortar hilos de sutura"
+  ],
+  "correct": 0,
+  "explanation": "El endoscopio se utiliza para observar el interior de órganos huecos o cavidades y puede servir para explorar, operar o tomar muestras.",
+  "category": "Aparatos médicos"
+},
+{
+  "question": "¿Qué tipo de ondas emplea la ecografía descrita en el tema?",
+  "options": [
+    "Ultrasonidos",
+    "Rayos láser para cortar",
+    "Corriente eléctrica de alta frecuencia para coagular",
+    "Ondas de radio para suturar"
+  ],
+  "correct": 0,
+  "explanation": "La ecografía utiliza ondas de ultrasonido para obtener imágenes.",
+  "category": "Aparatos médicos"
+},
+{
+  "question": "¿Qué instrumento permite medir indirectamente la presión arterial?",
+  "options": [
+    "Esfigmomanómetro o tensiómetro",
+    "Otoscopio",
+    "Pulsioxímetro",
+    "Tallímetro"
+  ],
+  "correct": 0,
+  "explanation": "El esfigmomanómetro o tensiómetro permite medir de forma indirecta la presión arterial.",
+  "category": "Aparatos médicos"
+},
+{
+  "question": "¿Cuál es una ventaja del material desechable citada en el tema?",
+  "options": [
+    "Reduce riesgos de higiene y transmisión y disminuye la necesidad de limpieza y esterilización",
+    "Permite reutilizarlo indefinidamente",
+    "Elimina la necesidad de desechar residuos correctamente",
+    "Hace innecesaria la higiene de manos"
+  ],
+  "correct": 0,
+  "explanation": "El tema destaca la reducción de riesgos de transmisión y de costes de limpieza/esterilización, siempre con una eliminación adecuada del material usado.",
+  "category": "Material desechable"
+},
+{
+  "question": "¿Cuál de estos materiales aparece en el tema como desechable habitual?",
+  "options": [
+    "Lanceta",
+    "Espéculo nasal metálico reutilizable",
+    "Separador quirúrgico reutilizable",
+    "Portaagujas metálico reutilizable"
+  ],
+  "correct": 0,
+  "explanation": "El tema enumera agujas, jeringas, catéteres, lancetas y guantes estériles, entre otros; en la autoevaluación, el espéculo nasal metálico reutilizable es la excepción.",
+  "category": "Material desechable"
+},
+{
+  "question": "¿Qué debe hacerse con el material desechable después de utilizarlo?",
+  "options": [
+    "Eliminarlo en el contenedor o circuito adecuado",
+    "Limpiarlo y volverlo a utilizar siempre",
+    "Guardarlo limpio en el carro para el día siguiente",
+    "Esterilizarlo en cualquier caso para reutilizarlo"
+  ],
+  "correct": 0,
+  "explanation": "El tema recalca que el material desechable debe desecharse correctamente tras su utilización.",
+  "category": "Material desechable"
+},
+{
+  "question": "¿Dónde indica el tema que debe guardarse el carro de curas cuando no se utiliza?",
+  "options": [
+    "En el control o puesto de enfermería",
+    "En la habitación de lencería",
+    "En el cuarto de residuos",
+    "En el pasillo, siempre abierto"
+  ],
+  "correct": 0,
+  "explanation": "El carro de curas se guarda en el control de enfermería cuando no está en uso, no en la habitación de lencería.",
+  "category": "Carro de curas y torundas"
+},
+{
+  "question": "¿Qué responsabilidad tiene el TCAE sobre el carro de curas?",
+  "options": [
+    "Comprobar el material, reponerlo y limpiar el carro",
+    "Modificar la indicación médica",
+    "Reutilizar gasas de un solo uso",
+    "Guardar material contaminado junto al estéril"
+  ],
+  "correct": 0,
+  "explanation": "El tema atribuye al TCAE la comprobación, reposición y limpieza del carro de curas.",
+  "category": "Carro de curas y torundas"
+},
+{
+  "question": "¿Qué debe hacerse con el material del carro antes de limpiar las baldas?",
+  "options": [
+    "Retirarlo para poder limpiar las superficies",
+    "Dejarlo puesto y pulverizar por encima",
+    "Mezclar el material limpio con los residuos",
+    "Cubrirlo con la bolsa de basura"
+  ],
+  "correct": 0,
+  "explanation": "El procedimiento descrito consiste en retirar primero el material y limpiar después las baldas y los laterales.",
+  "category": "Carro de curas y torundas"
+},
+{
+  "question": "¿Qué debe tenerse en cuenta tras aplicar el desinfectante al carro?",
+  "options": [
+    "Seguir las instrucciones del producto y dejar secar según corresponda",
+    "Aclarar siempre con cualquier otro producto químico",
+    "Secar con material contaminado",
+    "Volver a colocar inmediatamente residuos en las baldas"
+  ],
+  "correct": 0,
+  "explanation": "El tema indica seguir las instrucciones del desinfectante y respetar el secado que corresponda antes de reponer el material.",
+  "category": "Carro de curas y torundas"
+},
+{
+  "question": "¿Cuál de estos elementos puede formar parte de la caja de instrumental del carro de curas citada en el tema?",
+  "options": [
+    "Sonda acanalada, pinzas Pean y Kocher, mango de bisturí, tijeras Mayo y portaagujas",
+    "Solo un ECG y un desfibrilador",
+    "Únicamente vendas y algodón",
+    "Una báscula y un tallímetro exclusivamente"
+  ],
+  "correct": 0,
+  "explanation": "El tema menciona una caja metálica procedente de esterilización con instrumentos como sonda acanalada, pinzas Pean y Kocher, estilete abotonado, mango y hojas de bisturí, tijeras Mayo, portaagujas y pinzas de disección.",
+  "category": "Carro de curas y torundas"
+},
+{
+  "question": "¿Qué productos antisépticos se incluyen como ejemplos en la dotación del carro de curas?",
+  "options": [
+    "Povidona yodada y clorhexidina en distintas presentaciones",
+    "Solo perfume y jabón de manos",
+    "Únicamente alcohol de quemar",
+    "Ningún antiséptico"
+  ],
+  "correct": 0,
+  "explanation": "La lista de material del carro incluye povidona yodada y clorhexidina en diferentes formulaciones, además de otros materiales y medicación necesaria.",
+  "category": "Carro de curas y torundas"
+},
+{
+  "question": "En la técnica de torunda en crisálida, ¿cómo se inicia la preparación de la gasa?",
+  "options": [
+    "Se coloca en una superficie limpia y desinfectada y se dobla en diagonal formando un triángulo",
+    "Se corta con costótomo",
+    "Se introduce directamente en una pinza Mosquito",
+    "Se humedece en el envase del desinfectante"
+  ],
+  "correct": 0,
+  "explanation": "La técnica comienza con higiene de manos y guantes; después se coloca la gasa sobre una mesa limpia y desinfectada y se dobla en diagonal para formar un triángulo.",
+  "category": "Carro de curas y torundas"
+},
+{
+  "question": "Durante la técnica de torunda en crisálida, ¿para qué se utiliza el dedo índice?",
+  "options": [
+    "Se coloca bajo la gasa para enrollarla alrededor y formar el nudo inicial",
+    "Para sujetar una grapa quirúrgica",
+    "Para medir la longitud de la gasa",
+    "Para retirar los guantes al final"
+  ],
+  "correct": 0,
+  "explanation": "El dedo índice se introduce bajo la gasa y sirve de apoyo para envolverla, formar el nudo y continuar el enrollado descrito.",
+  "category": "Carro de curas y torundas"
+},
+{
+  "question": "¿Qué medidas de higiene se indican al terminar la confección de la torunda?",
+  "options": [
+    "Quitarse los guantes, lavarse las manos y registrar la técnica",
+    "Guardar los guantes para la siguiente torunda",
+    "Omitir la higiene de manos si la gasa está limpia",
+    "Dejar el material usado sobre la mesa"
+  ],
+  "correct": 0,
+  "explanation": "El cierre del procedimiento incluye retirarse los guantes, lavarse las manos y registrar la técnica realizada.",
+  "category": "Carro de curas y torundas"
+},
+{
+  "question": "¿Qué combinaciones de punta se mencionan para clasificar las tijeras?",
+  "options": [
+    "Fina, roma o mixta",
+    "Solo ovalada o triangular",
+    "Fenestrada o dentada exclusivamente",
+    "Curva, abotonada o eléctrica"
+  ],
+  "correct": 0,
+  "explanation": "El tema contempla puntas finas, romas o mixtas, además de formas rectas, curvas y anguladas.",
+  "category": "Corte y diéresis"
+},
+{
+  "question": "¿Qué relación general entre forma y uso de las tijeras recoge el tema?",
+  "options": [
+    "Rectas para hilos, curvas para tejidos y anguladas para la diéresis de vasos",
+    "Rectas para hueso, curvas para medir tensión y anguladas para suturar",
+    "Rectas para retirar grapas, curvas para pesar y anguladas para explorar el oído",
+    "Todas las formas se destinan únicamente a cortar hilos"
+  ],
+  "correct": 0,
+  "explanation": "La clasificación general del tema asocia tijeras rectas con el corte de hilos, curvas con tejidos y anguladas con la diéresis de vasos sanguíneos.",
+  "category": "Corte y diéresis"
+},
+{
+  "question": "¿Qué rasgo específico se atribuye a las tijeras vasculares Kelly o Potts-Smith?",
+  "options": [
+    "Puntas cortas y finas y mangos largos para alcanzar zonas difíciles",
+    "Hojas cortas y anchas para cortar capas de escayola",
+    "Extremo abotonado para proteger la piel al retirar vendajes",
+    "Hojas anchas y robustas para tejidos gruesos"
+  ],
+  "correct": 0,
+  "explanation": "El tema describe las tijeras vasculares Kelly o Potts-Smith con puntas cortas y finas y mangos largos, apropiadas para zonas de difícil acceso.",
+  "category": "Corte y diéresis"
+},
+{
+  "question": "¿Qué ejemplo de sutura sintética se menciona en el tema?",
+  "options": [
+    "Nailon",
+    "Seda",
+    "Gasa",
+    "Vitalio"
+  ],
+  "correct": 0,
+  "explanation": "El material presenta la seda como ejemplo natural y el nailon como ejemplo sintético; la clasificación concreta depende del tipo de hilo descrito.",
+  "category": "Suturas y grapas"
+},
+{
+  "question": "¿Qué instrumento del listado práctico se menciona junto a las pinzas Pean?",
+  "options": [
+    "Pinzas Kocher",
+    "Tijeras Iris exclusivamente",
+    "Pulsioxímetro",
+    "Báscula"
+  ],
+  "correct": 0,
+  "explanation": "La caja de instrumental descrita en el tema incluye pinzas Pean y Kocher, junto con otros instrumentos reutilizables procedentes de esterilización.",
+  "category": "Carro de curas y torundas"
+},
+{
+  "question": "¿Qué secuencia respeta el orden indicado para limpiar el carro de curas?",
+  "options": [
+    "Ponerse guantes, retirar residuos y materiales, limpiar de arriba abajo, dejar secar y reponer",
+    "Reponer el material, retirar la bolsa al final y limpiar solo el exterior",
+    "Limpiar las baldas inferiores, colocar material y luego limpiar las superiores",
+    "Pulverizar sobre todo el material y guardar el carro inmediatamente"
+  ],
+  "correct": 0,
+  "explanation": "El procedimiento del tema comienza con guantes y retirada de residuos y materiales; se limpian las superficies de arriba abajo, se respeta el secado del producto y después se repone el material.",
+  "category": "Carro de curas y torundas"
+},
+{
+  "question": "¿Qué diferencia principal existe entre una pinza de campo y una pinza de prensión de tejidos?",
+  "options": [
+    "La de campo fija los paños quirúrgicos; la de prensión sujeta tejidos",
+    "La de campo corta hueso; la de prensión mide la tensión",
+    "La de campo registra el corazón; la de prensión administra suero",
+    "Ambas se utilizan exclusivamente para retirar grapas"
+  ],
+  "correct": 0,
+  "explanation": "El tema distingue las pinzas de campo, como Backhaus, que fijan los paños, de las pinzas de prensión, destinadas a agarrar tejidos.",
+  "category": "Pinzas y hemostasia"
+},
+{
+  "question": "¿Qué característica distingue al endoscopio de un otoscopio según el uso descrito en el tema?",
+  "options": [
+    "El endoscopio permite visualizar cavidades u órganos huecos; el otoscopio explora el oído",
+    "El endoscopio mide la presión arterial; el otoscopio registra el ECG",
+    "El endoscopio corta escayola; el otoscopio retira grapas",
+    "Ambos se describen únicamente como aparatos de infusión"
+  ],
+  "correct": 0,
+  "explanation": "El endoscopio permite explorar el interior de órganos huecos o cavidades y tomar muestras; el otoscopio se utiliza específicamente para explorar el oído.",
+  "category": "Aparatos médicos"
+}
+];
+const $ = id => document.getElementById(id);
+let current=0,answers=[],locked=false,activeQuestions=[];
+const CATEGORY_ORDER=["Generalidades del instrumental","Corte y diéresis","Pinzas y hemostasia","Separadores y exploración","Suturas y grapas","Aparatos médicos","Material desechable","Carro de curas y torundas"];
+function getCategory(q){
+ const t=(q.question+" "+q.explanation).toLowerCase();
+ if(/carro de curas|torunda|crisálida|balda|baldas|puesto de enfermería|povidona|clorhexidina|caja de instrumental/.test(t))return "Carro de curas y torundas";
+ if(/desechable|desechar|material de un solo uso|reutilizable/.test(t) && /lanceta|material|espéculo|eliminar|ventaja|después de utilizarlo/.test(t))return "Material desechable";
+ if(/electrocardi|ecg|pulsiox|saturación|esfigmomanómetro|tensiómetro|tallímetro|báscula|bomba de infusión|nebulizador|endoscopio|ecografía|ultrasonido|monitor-desfibrilador|presión arterial/.test(t))return "Aparatos médicos";
+ if(/sutura|portaagujas|portaaguj|aguja|grapa|grapadora|quitagrapas|littauer|hilo|calibre usp|seda|monofilamento|multifilamento|mathieu|gillies/.test(t))return "Suturas y grapas";
+ if(/bisturí|escalpelo|tijera|tijeras|cizalla|costótomo|costotomo|sierra oscilante|legra|cureta|mayo|iris|metzenbaum|lister|potts-smith/.test(t))return "Corte y diéresis";
+ if(/pinza|pinzas|forceps|fórceps|hemostasia|mosquito|halsted|allis|duval|lovelace|babcock|foerster|disección|diseccion|adson sin dientes/.test(t))return "Pinzas y hemostasia";
+ if(/separador|farabeuf|roux|backhaus|campo quirúrgico|estilete|sonda acanalada|trócar|trocar|magill|yankauer|aspirador|traumatología|fístula|fistula/.test(t))return "Separadores y exploración";
+ return "Generalidades del instrumental";
+}
+questions.forEach(q=>{if(!q.category)q.category=getCategory(q)});
+const modeSelect=$("mode-select");
+CATEGORY_ORDER.forEach(cat=>{const o=document.createElement("option");o.value=cat;o.textContent=cat;modeSelect.appendChild(o)});
+function updateModeHelp(){const v=modeSelect.value;const count=v==="all"?questions.length:questions.filter(q=>q.category===v).length;$("mode-help").textContent=v==="all"?`Práctica completa: ${count} preguntas, con explicaciones.`:`Repaso de ${v.toLowerCase()}: ${count} preguntas.`}
+modeSelect.addEventListener("change",updateModeHelp);updateModeHelp();
+$("home-count").textContent=`${questions.length} preguntas disponibles`;
+$("start-btn").addEventListener("click",startQuiz);$("next-btn").addEventListener("click",nextQuestion);$("quit-btn").addEventListener("click",()=>showScreen("home"));$("retry-btn").addEventListener("click",startQuiz);
+$("review-btn").addEventListener("click",()=>{$("review").classList.toggle("hidden");$("review-btn").textContent=$("review").classList.contains("hidden")?"Revisar todas las respuestas":"Ocultar revisión"});
+function showScreen(screen){["home","quiz","results"].forEach(id=>$(id).classList.toggle("hidden",id!==screen))}
+function startQuiz(){
+ const chosen=modeSelect.value;
+ const base=chosen==="all"?questions:questions.filter(q=>q.category===chosen);
+ // Aleatoriza el orden de las opciones en cada intento, manteniendo la respuesta correcta.
+ activeQuestions=base.map(q=>{const order=q.options.map((_,i)=>i);for(let i=order.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[order[i],order[j]]=[order[j],order[i]]}return {...q,options:order.map(i=>q.options[i]),correct:order.indexOf(q.correct)}});
+ current=0;answers=[];locked=false;$("review").classList.add("hidden");$("review-btn").textContent="Revisar todas las respuestas";showScreen("quiz");renderQuestion()
+}
+function renderQuestion(){locked=false;const q=activeQuestions[current];$("question-counter").textContent=`Pregunta ${current+1} de ${activeQuestions.length}`;$("score-live").textContent=`Aciertos: ${answers.filter((a,i)=>a===activeQuestions[i].correct).length}`;$("progress-bar").style.width=`${current/activeQuestions.length*100}%`;$("question-category").textContent=q.category||"PREGUNTA DE REPASO";$("question-text").textContent=q.question;$("options").innerHTML="";$("feedback").className="feedback hidden";$("feedback").textContent="";$("next-btn").classList.add("hidden");q.options.forEach((option,index)=>{const b=document.createElement("button");b.className="option";const letter=document.createElement("span");letter.className="letter";letter.textContent=String.fromCharCode(65+index);const label=document.createElement("span");label.textContent=option;b.append(letter,label);b.addEventListener("click",()=>chooseAnswer(index));$("options").appendChild(b)})}
+function chooseAnswer(index){if(locked)return;locked=true;const q=activeQuestions[current];answers[current]=index;[...$("options").querySelectorAll("button")].forEach((b,i)=>{b.disabled=true;if(i===q.correct)b.classList.add("correct");if(i===index&&index!==q.correct)b.classList.add("incorrect")});const good=index===q.correct;$("feedback").className=`feedback ${good?"good":"bad"}`;const strong=document.createElement("strong");strong.textContent=good?"¡Correcto!":"No exactamente.";const detail=document.createElement("div");detail.textContent=q.explanation;$("feedback").append(strong,detail);$("score-live").textContent=`Aciertos: ${answers.filter((a,i)=>a===activeQuestions[i].correct).length}`;$("progress-bar").style.width=`${(current+1)/activeQuestions.length*100}%`;$("next-btn").textContent=current===activeQuestions.length-1?"Ver resultados →":"Siguiente pregunta →";$("next-btn").classList.remove("hidden")}
+function nextQuestion(){if(!locked)return;if(current<activeQuestions.length-1){current++;renderQuestion()}else showResults()}
+function showResults(){const correct=answers.filter((a,i)=>a===activeQuestions[i].correct).length,wrong=activeQuestions.length-correct,percent=Math.round(correct/activeQuestions.length*100);$("result-score").textContent=`${correct}/${activeQuestions.length}`;$("correct-total").textContent=correct;$("wrong-total").textContent=wrong;$("percentage").textContent=`${percent}%`;$("result-heading").textContent=percent===100?"¡Excelente, lo has conseguido!":percent>=70?"¡Muy buen trabajo!":"¡Sigue practicando!";$("result-message").textContent=percent>=70?"Revisa las explicaciones de las preguntas falladas para afianzar los conceptos.":"Revisa las explicaciones y vuelve a intentarlo. La práctica te ayudará a mejorar.";const review=$("review");review.innerHTML="";activeQuestions.forEach((q,i)=>{const item=document.createElement("article");item.className="review-item";const h=document.createElement("h3");h.textContent=`${i+1}. ${q.question}`;const yours=document.createElement("p");yours.textContent=`Tu respuesta: ${q.options[answers[i]]}${answers[i]===q.correct?" ✓":" ✗"}`;const right=document.createElement("p");right.textContent=`Respuesta correcta: ${q.options[q.correct]}`;const exp=document.createElement("p");exp.textContent=`Explicación: ${q.explanation}`;item.append(h,yours,right,exp);review.appendChild(item)});showScreen("results")}
+</script></body></html>
